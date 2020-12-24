@@ -1,0 +1,37 @@
+{
+  "name": "git4nstats-pru",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "npx tsc -b",
+    "build-pnpm": "pnpx tsc -b",
+    "build-watching": "npx tsc -b -w",
+    "build-watching-pnpm": "pnpx tsc -b -w",
+    "db-setup": "env-cmd --no-override -f ./config/dev.env node dist/interfaces/database/mongodb/setup.js",
+    "db-startup": "env-cmd --no-override -f ./config/dev.env node dist/interfaces/database/mongodb/startup.js",
+    "start": "env-cmd --no-override -f ./config/dev.env node dist/app.js",
+    "start-watching": "env-cmd --no-override -f ./config/dev.env nodemon dist/app.js -e js",
+    "start-watching-pnpm": "pnpx env-cmd --no-override -f ./config/dev.env nodemon dist/app.js -e js",
+    "test": "npx jest",
+    "test-pnpm": "pnpx jest",
+    "test-watching": "npx jest --watch",
+    "test-watching-pnpm": "pnpx jest --watch"
+  },
+  "author": "Samir Hincapié",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "26.0.19",
+    "@types/mongodb": "3.6.3",
+    "@types/node": "14.14.14",
+    "env-cmd": "10.1.0",
+    "jest": "26.6.3",
+    "nodemon": "2.0.6",
+    "typescript": "4.1.3"
+  },
+  "dependencies": {
+    "fastify": "3.9.2",
+    "mongodb": "3.6.3",
+    "octonode": "0.10.0"
+  }
+}
