@@ -1,6 +1,6 @@
 {
   "name": "@sahincapiec/git4nstats",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/app.js",
   "scripts": {
@@ -23,7 +23,15 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "repository": "https://github.com/sahincapiec/git4nstatus.git",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:sahincapiec/git4nstatus.git",
+    "directory": "@sahincapiec/git4nstatus"
+  },
+  "bugs": {
+    "url": "https://github.com/sahincapiec/git4nstatus/issues"
+  },
+  "homepage": "https://github.com/sahincapiec/git4nstatus",
   "devDependencies": {
     "@types/jest": "26.0.19",
     "@types/mongodb": "3.6.3",
