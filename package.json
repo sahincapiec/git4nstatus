@@ -10,13 +10,13 @@
     "build-watching-pnpm": "pnpx tsc -b -w",
     "db-setup": "env-cmd --no-override -f ./config/dev.env node dist/interfaces/database/mongodb/setup.js",
     "db-startup": "env-cmd --no-override -f ./config/dev.env node dist/interfaces/database/mongodb/startup.js",
-    "start": "env-cmd --no-override -f ./config/dev.env node dist/app.js",
-    "start-watching": "env-cmd --no-override -f ./config/dev.env nodemon dist/app.js -e js",
-    "start-watching-pnpm": "pnpx env-cmd --no-override -f ./config/dev.env nodemon dist/app.js -e js",
+    "start": "env-cmd --no-override -f ./config/dev.env node dist/src/app.js",
+    "start-watching": "env-cmd --no-override -f ./config/dev.env nodemon dist/src/app.js -e js",
+    "start-watching-pnpm": "pnpx env-cmd --no-override -f ./config/dev.env nodemon dist/src/app.js -e js",
     "test": "npx jest",
     "test-pnpm": "pnpx jest",
     "test-watching": "npx jest --watch",
-    "test-watching-pnpm": "pnpx jest --watch"
+    "test-watching-pnpm": "pnpx jest --watch dist/test/*.*"
   },
   "author": "Samir Hincapié",
   "license": "MIT",
