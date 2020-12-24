@@ -1,5 +1,5 @@
 {
-  "name": "git4nstats-pru",
+  "name": "@sahincapiec/git4nstats",
   "version": "1.0.0",
   "description": "",
   "main": "dist/app.js",
@@ -32,6 +32,7 @@
   "dependencies": {
     "fastify": "3.9.2",
     "mongodb": "3.6.3",
-    "octonode": "0.10.0"
+    "octonode": "0.10.0",
+    "node": "^14.0.0"
   }
 }
