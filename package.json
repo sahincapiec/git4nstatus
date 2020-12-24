@@ -20,6 +20,10 @@
   },
   "author": "Samir Hincapié",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": "https://github.com/sahincapiec/git4nstatus.git",
   "devDependencies": {
     "@types/jest": "26.0.19",
     "@types/mongodb": "3.6.3",
