@@ -17,7 +17,7 @@ export default class EventService {
 
     getEvents = (user: IGithubUser) => this.github.getEvents(user.login)
         .then((events: IGithubEvent[]) => {
-            const sortedEvents = events.sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+            const sortedEvents = events.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
             return sortedEvents.slice(0, 5);
         })
         .then(slicedEvents => {

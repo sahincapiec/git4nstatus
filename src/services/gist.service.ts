@@ -17,7 +17,7 @@ export default class GistService {
 
     getGists = (user: IGithubUser) => this.github.getGists(user.login)
         .then((gists: IGithubGist[]) => {
-            const sortedGists = gists.sort((a, b) => new Date(a.created_at).getTime() - new Date(b.created_at).getTime());
+            const sortedGists = gists.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
             return sortedGists.slice(0, 3);
         })
         .then(slicedGists => {
