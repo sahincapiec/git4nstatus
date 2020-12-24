@@ -1,4 +1,5 @@
 import { MongoClient } from "mongodb";
+import IDatabase from "../database.interface";
 
 export default class MongoDB implements IDatabase {
     private dbConnection: MongoClient | undefined;

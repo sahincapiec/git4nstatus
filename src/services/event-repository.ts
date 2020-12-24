@@ -1,5 +1,6 @@
 import IGithubEvent from "src/entities/github-event.interface";
 import IGithubUser from "src/entities/github-user.interface";
+import IDatabase from "src/interfaces/database/database.interface";
 import IRepository from "./repository.interface";
 
 export default class EventRepository implements IRepository {

@@ -1,3 +1,4 @@
+import IDatabase from "src/interfaces/database/database.interface";
 import IGithubUser from "../entities/github-user.interface";
 import MongoDB from "../interfaces/database/mongodb/mongodb";
 import IGitHub from "../interfaces/github/github.interface";
